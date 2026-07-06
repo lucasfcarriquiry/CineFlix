@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket #5 (Desafío Final): Catálogo de Streaming (Filtro por Botones)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--
+        Cliente: Plataforma "CineFlix"
+        Contexto: Mostrar la cartelera basada en la lista apiPeliculas 
+        e implementar botones que filtren qué películas se muestran en pantalla según su puntuación.
+        Requerimientos de Interfaz (HTML):
+        Un contenedor principal para las películas.
+        Dos botones superiores: "Ver Todas" y "Mejores Calificadas (Más de 8.7)".
+    -->
+
+  <!-- Encabezado -->
+  <h1 class="text-3xl font-bold text-gray-800 mb-6">🎬 Cartelera de Películas</h1>
+
+  <!-- Botones de filtro -->
+  <div class="flex gap-4 mb-6">
+    <button id="btn-listadoPeliculas" 
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      Ver Todas
+    </button>
+    <button id="btn-peliculasMejorCalificadas" 
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+      Mejores Calificadas
+    </button>
+  </div>
+
+  <!-- Contenedor principal -->
+  <div id="div-contenedorPrincipal" 
+       class="w-full max-w-3xl bg-white rounded-lg shadow-md p-4">
+    <!-- Aquí se dibuja el placeholder inicial -->
+  </div>
+
+
+
+    <script src="../datos_api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
